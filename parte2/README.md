@@ -6,5 +6,5 @@ A implementação do alocador foi feita em C++ e um código para teste está em 
 
 ### Compilação para teste
 ```shell
-g++ alocaMain.cpp aloca.cpp -o aloca 
-./aloca
+g++ parte2.cpp ../aloca.cpp -o p2
+./p2 workloadMem0
