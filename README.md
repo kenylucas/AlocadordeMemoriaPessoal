@@ -1,0 +1,1 @@
+# AlocadordeMemoriaPessoal
