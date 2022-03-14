@@ -5,9 +5,15 @@
 A implementação do alocador foi feita em C++ e um código para teste está em `main.cpp`.
 
 ### Compilação para teste
+
+arquivoDeTeste = workloadMem0, workloadMem1 ou workloadMem2. 
+Onde: 
+* workloadMem0: Política = Best Fit
+* workloadMem1: Política = Next Fit
+* workloadMem2: Política = First Fit
 ```shell
 g++ parte2.cpp ../aloca.cpp -o p2
-./p2 workloadMem0
+./p2 arquivoDeTeste
 ```
 
 ##### Faça um programa que utilize o alocador que vocês fizeram para rodar os workloads em anexo #####
