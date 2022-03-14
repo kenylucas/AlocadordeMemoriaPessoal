@@ -49,6 +49,7 @@ __ID_Ponteiro__ é um número inteiro e VALOR é usado apenas na alocação, e r
 Exemplo de arquivo de workload:
 
 `
+
 10000 0
 
 6
@@ -64,6 +65,7 @@ A 3 1000
 F 1
 
 F 3
+
 `
 
 Onde se cria uma memória de 10000 bytes, se aloca 3 ponteiros 1, 2 e 3 com tamanhos (100,10,1000) e se libera os três (gerenciando o espaço livre dentro da estrutura).
