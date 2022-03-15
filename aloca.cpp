@@ -6,7 +6,7 @@ meualoc::meualoc(int tamanhoMemoria, int politicaMem)
     memoria = (char *)malloc(tamanhoMemoria);
     tamanho = tamanhoMemoria;
     politica = politicaMem;
-    livres = new Lista(tamanho, 0); //lista de livres
+    livres = new Lista(tamanho, 0);
     posicao = livres->prim();
 }
 
@@ -156,7 +156,7 @@ int meualoc::libera(char *ponteiro)
     unsigned short magic = ((cabecalho[0] & 0xFF) << 8) + (cabecalho[1] & 0xFF);
     if (magic == MAGICNUMBER)
     {
-        unsigned short tam = ((cabecalho[2] & 0xFF) << 8) + (cabecalho[3] & 0xFF) + 4; //+ 4 do cabecalho
+        unsigned short tam = ((cabecalho[2] & 0xFF) << 8) + (cabecalho[3] & 0xFF) + 4;
         livres->inserir_ordenado(cabecalho - memoria,tam);
         for (int i = 0; i < 4; i++)
         {
