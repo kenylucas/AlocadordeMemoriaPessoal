@@ -1,5 +1,6 @@
 ## Grupo
 - Keny Lucas Souza 
+- Diego Queiroz
 
 ## Instruções de utilização
 A implementação do alocador foi feita em C++ e um código para teste está em `main.cpp`.
